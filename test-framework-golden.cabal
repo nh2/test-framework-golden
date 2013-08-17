@@ -37,4 +37,4 @@ library
                        Test.Golden.Console
   other-modules:
                        Test.Golden.Internal
-  build-depends:       base ==4.*, test-framework >= 0.8.1, bytestring, process, mtl
+  build-depends:       base ==4.*, test-framework >= 0.8, temporary >= 1.1, bytestring, filepath, process, mtl
