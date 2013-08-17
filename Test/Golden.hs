@@ -9,14 +9,15 @@ module Test.Golden
   )
   where
 
-import Test.Framework.Providers.API hiding (liftIO)
-import Test.Golden.Advanced
-import Text.Printf
+import Control.Exception
 import qualified Data.ByteString.Lazy as LB
+import System.Exit
 import System.IO
 import System.Process
-import System.Exit
-import Control.Exception
+import Text.Printf
+
+import Test.Framework.Providers.API hiding (liftIO)
+import Test.Golden.Advanced
 
 -- trick to avoid an explicit dependency on transformers
 import Control.Monad.Error (liftIO)
